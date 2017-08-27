@@ -8,8 +8,6 @@ ENV TABLEAU_VERSION="10.4-beta3" \
     TABLEAU_DL_USER="tableau104" \
     TABLEAU_DL_PASS=$tableau_dl_pass 
 
-RUN echo  rpm -Uvh "https://${TABLEAU_DL_USER}:${TABLEAU_DL_PASS}@beta.tableau.com/linux_files/tableau-server-${TABLEAU_VERSION}.x86_64.rpm"
-
 RUN rpm -Uvh "https://${TABLEAU_DL_USER}:${TABLEAU_DL_PASS}@beta.tableau.com/linux_files/tableau-server-automated-installer-${TABLEAU_VERSION}.x86_64.rpm" \
              "https://${TABLEAU_DL_USER}:${TABLEAU_DL_PASS}@beta.tableau.com/linux_files/tableau-server-${TABLEAU_VERSION}.x86_64.rpm" \
              "https://${TABLEAU_DL_USER}:${TABLEAU_DL_PASS}@beta.tableau.com/linux_files/tableau-postgresql-odbc-${TABLEAU_VERSION}.x86_64.rpm" \
