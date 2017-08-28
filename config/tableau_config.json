@@ -1,0 +1,19 @@
+{
+   "configEntities": {
+      "gatewaySettings": {
+         "_type": "gatewaySettingsType",
+         "port": 80,
+         "firewallOpeningEnabled": true,
+         "sslRedirectEnabled": true,
+         "publicHost": "localhost",
+         "publicPort": 80
+      },
+      "identityStore": {
+         "_type": "identityStoreType",
+         "type": "local"
+      }
+    },
+     "configKeys": {
+        "gateway.timeout": "900"
+     }
+}
