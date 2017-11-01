@@ -21,7 +21,7 @@ RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.
     (echo 'tsm ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/tsm) && \
     mkdir -p  /run/systemd/system /opt/tableau/docker_build && \
     yum install -y \
-             "https://beta.tableau.com/linux_files/tableau-server-automated-installer-${TABLEAU_VERSION}.x86_64.rpm" \
+             "https://beta.tableau.com/linux_files/tableau-server-automated-installer-${TABLEAU_VERSION}.noarch.rpm" \
              "https://beta.tableau.com/linux_files/tableau-server-${TABLEAU_VERSION}.x86_64.rpm"  \
              "https://beta.tableau.com/linux_driver/tableau-postgresql-odbc-9.5.3-1.x86_64.rpm"  && \
     rm -rf /var/tmp/yum-* 
