@@ -1,9 +1,9 @@
 EDITOR=vim
 
-all: build
+all: regconfig build
 
 build:
-	docker build  --build-arg=tableau_dl_pass=${TABLEAU_DL_PASS}  -t tfoldi/tableau-server:beta .
+	docker build -t tfoldi/tableau-server:beta .
 
 run: build
 	docker run -ti --privileged -v /sys/fs/cgroup:/sys/fs/cgroup -v /run -p 80 tfoldi/tableau-server:beta
