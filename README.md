@@ -2,12 +2,8 @@
 Dockerfile for Tableau Server on Linux - Single Node. 
 
 ## Build
-
-To build first add your Tableau Beta site password to the `TABLEAU_DL_PASS` environment variable.
-
-    export TABLEAU_DL_PASS=<password>
-    
-Then simply call `make`:
+   
+Be sure that your `EDITOR` environment variable is set then simply call `make`:
 
     make
     
