@@ -3,16 +3,11 @@
 # our image is centos default image with systemd
 FROM centos/systemd
 
-# You have to specify the password for the beta site
-ARG tableau_dl_pass
-
 # who's your boss?
 MAINTAINER "Tamas Foldi" <tfoldi@starschema.net>
 
 # this is the version what we're building
-ENV TABLEAU_VERSION="10.4-beta3" \
-    TABLEAU_DL_USER="tableau104" \
-    TABLEAU_DL_PASS=$tableau_dl_pass \
+ENV TABLEAU_VERSION="10.5-beta5" \
     LANG=en_US.UTF-8
 
 # make systemd dbus visible 
@@ -26,9 +21,9 @@ RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.
     (echo 'tsm ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/tsm) && \
     mkdir -p  /run/systemd/system /opt/tableau/docker_build && \
     yum install -y \
-             "https://${TABLEAU_DL_USER}:${TABLEAU_DL_PASS}@beta.tableau.com/linux_files/tableau-server-automated-installer-${TABLEAU_VERSION}.x86_64.rpm" \
-             "https://${TABLEAU_DL_USER}:${TABLEAU_DL_PASS}@beta.tableau.com/linux_files/tableau-server-${TABLEAU_VERSION}.x86_64.rpm"  \
-             "https://${TABLEAU_DL_USER}:${TABLEAU_DL_PASS}@beta.tableau.com/linux_files/tableau-postgresql-odbc-9.5.3-1.x86_64.rpm"  && \
+             "https://beta.tableau.com/linux_files/tableau-server-automated-installer-${TABLEAU_VERSION}.x86_64.rpm" \
+             "https://beta.tableau.com/linux_files/tableau-server-${TABLEAU_VERSION}.x86_64.rpm"  \
+             "https://beta.tableau.com/linux_driver/tableau-postgresql-odbc-9.5.3-1.x86_64.rpm"  && \
     rm -rf /var/tmp/yum-* 
 
 
