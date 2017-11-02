@@ -11,7 +11,7 @@ ENV TABLEAU_VERSION="10.5-beta5" \
     LANG=en_US.UTF-8
 
 # make systemd dbus visible 
-VOLUME /sys/fs/cgroup /run /tmp
+VOLUME /sys/fs/cgroup /run /tmp /var/opt/tableau
 
 # Install core bits and their deps:w
 RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm && \
