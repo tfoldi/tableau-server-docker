@@ -29,6 +29,6 @@ These ten lines of code done by me, [@tfoldi](https://twitter.com/tfoldi)
 
 
 ## Install Demo
-[console video,](https://asciinema.org/a/oJ7tTN0URdtF9UqpCRRGJzKvT/embed?)
+[Console Video](https://asciinema.org/a/oJ7tTN0URdtF9UqpCRRGJzKvT/embed?)
     
 
