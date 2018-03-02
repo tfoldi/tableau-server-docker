@@ -32,4 +32,4 @@ These ten lines of code done by me, [@tfoldi](https://twitter.com/tfoldi)
 [Console Video](https://asciinema.org/a/oJ7tTN0URdtF9UqpCRRGJzKvT/embed?)
     
 ## Blog from tfoldi
-[Blogs](https://databoss.starschema.net/tableau-server-linux-docker-container/)
+[Blog](https://databoss.starschema.net/tableau-server-linux-docker-container/)
