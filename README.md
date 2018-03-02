@@ -40,4 +40,4 @@ These ten lines of code done by me, [@tfoldi](https://twitter.com/tfoldi)
 
 - [Whitepaper Tableau for the enterprise](https://www.tableau.com/sites/default/files/whitepapers/whitepaper_tableau-for-the-enterprise_0.pdf)
 
--[Online Help](http://onlinehelp.tableau.com/v10.5/pro/desktop/en-us/help.htm)
+- [Online Help](http://onlinehelp.tableau.com/v10.5/pro/desktop/en-us/help.htm)
