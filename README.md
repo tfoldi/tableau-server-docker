@@ -31,4 +31,5 @@ These ten lines of code done by me, [@tfoldi](https://twitter.com/tfoldi)
 ## Install Demo
 [Console Video](https://asciinema.org/a/oJ7tTN0URdtF9UqpCRRGJzKvT/embed?)
     
-
+## Blog from tfoldi
+[Blogs](https://databoss.starschema.net/tableau-server-linux-docker-container/)
