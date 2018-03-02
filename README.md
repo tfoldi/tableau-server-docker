@@ -33,3 +33,8 @@ These ten lines of code done by me, [@tfoldi](https://twitter.com/tfoldi)
     
 ## Blog from tfoldi
 [Blog](https://databoss.starschema.net/tableau-server-linux-docker-container/)
+
+## Tableau docs
+
+- [Introducing Tableau Server on Linux](https://onlinehelp.tableau.com/current/server-linux/en-us/release_notes_linux.htm)
+
