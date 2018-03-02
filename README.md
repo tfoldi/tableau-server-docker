@@ -37,5 +37,7 @@ These ten lines of code done by me, [@tfoldi](https://twitter.com/tfoldi)
 ## Tableau docs
 
 - [Introducing Tableau Server on Linux](https://onlinehelp.tableau.com/current/server-linux/en-us/release_notes_linux.htm)
+
 - [Whitepaper Tableau for the enterprise](https://www.tableau.com/sites/default/files/whitepapers/whitepaper_tableau-for-the-enterprise_0.pdf)
+
 -[Online Help](http://onlinehelp.tableau.com/v10.5/pro/desktop/en-us/help.htm)
