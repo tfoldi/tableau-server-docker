@@ -7,11 +7,11 @@ FROM centos/systemd
 MAINTAINER "Tamas Foldi" <tfoldi@starschema.net>
 
 # this is the version what we're building
-ENV TABLEAU_VERSION="10.5.2" \
+ENV TABLEAU_VERSION="2018.1.1" \
     LANG=en_US.UTF-8
 
 # make systemd dbus visible 
-VOLUME /sys/fs/cgroup /run /tmp /var/opt/tableau
+VOLUME /sys/fs/cgroup /run /tmp
 
 # Install core bits and their deps:w
 RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm && \
