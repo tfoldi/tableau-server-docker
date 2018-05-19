@@ -13,6 +13,8 @@ ENV TABLEAU_VERSION="2018.1.1" \
 # make systemd dbus visible 
 VOLUME /sys/fs/cgroup /run /tmp
 
+COPY config/lscpu /bin
+
 # Install core bits and their deps:w
 RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm && \
     yum install -y iproute curl sudo vim && \
@@ -30,7 +32,7 @@ COPY config/* /opt/tableau/docker_build/
 
 RUN mkdir -p /etc/systemd/system/ && \
     cp /opt/tableau/docker_build/tableau_server_install.service /etc/systemd/system/ && \
-    systemctl enable tableau_server_install
+    systemctl enable tableau_server_install 
 
 # Expose TSM and Gateway ports
 EXPOSE 80 8850
