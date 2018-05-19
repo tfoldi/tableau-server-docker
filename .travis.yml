@@ -1,0 +1,13 @@
+sudo: required
+
+services:
+  - docker
+
+language: c
+
+before_install:
+- make run EDITOR=touch
+
+script:
+- sleep 120; docker ps -a
+
