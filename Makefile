@@ -8,8 +8,12 @@ build:
 run: build
 	docker run -ti --privileged -v /sys/fs/cgroup:/sys/fs/cgroup -v /run -p 80 tfoldi/tableau-server:release
 
+
 clean:
-	docker ps -aq --no-trunc | xargs docker rm
+	docker system prune
+	
+prune:
+	docker system prune -f
 
 exec:
 	docker exec -ti `docker ps | grep tableau-server:release |head -1 | awk -e '{print $$1}'` /bin/bash
