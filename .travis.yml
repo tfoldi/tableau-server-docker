@@ -6,8 +6,8 @@ services:
 language: c
 
 before_install:
-- make EDITOR=touch
+- travis_wait 30 make EDITOR=touch
 
 script:
-- true dat - travis doesnt have large images to start the server
+- docker run tfoldi/tableau-server:release yum info tableau-server 
 
