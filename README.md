@@ -1,4 +1,5 @@
-# tableau-server-beta-docker
+# tableau-server-docker [![Build Status](https://travis-ci.org/tfoldi/tableau-server-docker.svg?branch=master)](https://travis-ci.org/tfoldi/tableau-server-docker)
+
 Dockerfile for Tableau Server on Linux - Single Node. 
 
 ## Build
