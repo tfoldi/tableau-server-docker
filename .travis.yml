@@ -6,8 +6,8 @@ services:
 language: c
 
 before_install:
-- make run EDITOR=touch
+- make EDITOR=touch
 
 script:
-- sleep 120; docker ps -a
+- true dat - travis doesnt have large images to start the server
 
