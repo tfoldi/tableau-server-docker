@@ -7,7 +7,7 @@ FROM centos/systemd
 MAINTAINER "Tamas Foldi" <tfoldi@starschema.net>
 
 # this is the version what we're building
-ENV TABLEAU_VERSION="2018.2.2" \
+ENV TABLEAU_VERSION="2019.1.1" \
     LANG=en_US.UTF-8
 
 # make systemd dbus visible 
